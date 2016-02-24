@@ -17,7 +17,7 @@ namespace NuGetGallery.Packaging
 
         public PackageMetadata(
             Dictionary<string, string> metadata,
-            IEnumerable<PackageDependencyGroup> dependencyGroups, 
+            IEnumerable<PackageDependencyGroup> dependencyGroups,
             IEnumerable<FrameworkSpecificGroup> frameworkGroups,
             NuGetVersion minClientVersion)
         {
@@ -32,7 +32,7 @@ namespace NuGetGallery.Packaging
         private void SetPropertiesFromMetadata()
         {
             Id = GetValue("id", string.Empty);
-            
+
             NuGetVersion nugetVersion;
             if (NuGetVersion.TryParse(GetValue("version", string.Empty), out nugetVersion))
             {

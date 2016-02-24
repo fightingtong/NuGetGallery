@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
+using NuGet.Services.Gallery;
 using NuGetGallery.Areas.Admin.Models;
 using NuGetGallery.Configuration;
 
